@@ -1,0 +1,202 @@
+@startuml
+annotation java.lang.Override
+class accountsInfo.AccountStatistics
+class accountsInfo.AccountStatisticsBuilder
+class accountsInfo.Prefernce
+class db.DBConnection
+class gui.AccountsPane
+class gui.MeshPane
+class java.awt.Point
+class java.io.File
+class java.io.IOException
+class java.lang.System
+class java.net.URISyntaxException
+class java.nio.file.Files
+class java.nio.file.Path
+class java.nio.file.Paths
+class java.sql.Connection
+class java.sql.Date
+class java.sql.DriverManager
+class java.sql.PreparedStatement
+class java.sql.ResultSet
+class java.sql.SQLException
+class java.sql.Statement
+class java.sql.Time
+class java.time.LocalDate
+class java.time.LocalTime
+class java.time.temporal.ChronoUnit
+class java.util.ArrayList
+class java.util.Optional
+class java.util.Random
+class java.util.TreeMap
+class java.util.TreeSet
+class java.util.stream.Collectors
+class java.util.stream.Stream
+class javafx.animation.KeyFrame
+class javafx.animation.Timeline
+class javafx.application.Application
+class javafx.event.ActionEvent
+class javafx.scene.Scene
+class javafx.scene.chart.CategoryAxis
+class javafx.scene.chart.LineChart
+class javafx.scene.chart.NumberAxis
+class javafx.scene.chart.XYChart
+class javafx.scene.control.Alert
+class javafx.scene.control.Button
+class javafx.scene.control.ButtonBar.ButtonData
+class javafx.scene.control.ButtonType
+class javafx.scene.control.CheckBox
+class javafx.scene.control.ComboBox
+class javafx.scene.control.Dialog
+class javafx.scene.control.Label
+class javafx.scene.control.ListView
+class javafx.scene.control.Menu
+class javafx.scene.control.MenuBar
+class javafx.scene.control.MenuItem
+class javafx.scene.control.Separator
+class javafx.scene.control.SeparatorMenuItem
+class javafx.scene.control.Slider
+class javafx.scene.control.TextInputDialog
+class javafx.scene.control.ToolBar
+class javafx.scene.control.Tooltip
+class javafx.scene.image.Image
+class javafx.scene.image.ImageView
+class javafx.scene.input.KeyCodeCombination
+class javafx.scene.layout.GridPane
+class javafx.scene.layout.Pane
+class javafx.scene.layout.VBox
+class javafx.scene.paint.Color
+class javafx.scene.text.Font
+class javafx.scene.text.Text
+class javafx.scene.text.TextAlignment
+class javafx.scene.text.TextFlow
+class javafx.scene.web.WebEngine
+class javafx.scene.web.WebView
+class javafx.stage.Stage
+class javafx.util.Callback
+class javafx.util.Duration
+class javafx.util.Pair
+class schulte.Schulte
+enum enumerations.AfterClickEffects
+enum enumerations.StringSource
+accountsInfo.AccountStatistics ..> java.time.LocalDate
+accountsInfo.AccountStatistics ..> java.time.LocalTime
+accountsInfo.AccountStatisticsBuilder ..> java.time.LocalDate
+accountsInfo.AccountStatisticsBuilder ..> java.time.LocalTime
+accountsInfo.Prefernce ..> java.awt.Point
+accountsInfo.Prefernce ..> java.io.File
+accountsInfo.Prefernce ..> java.io.IOException
+accountsInfo.Prefernce ..> java.lang.System
+accountsInfo.Prefernce ..> java.nio.file.Files
+accountsInfo.Prefernce ..> java.nio.file.Paths
+accountsInfo.Prefernce ..> java.util.ArrayList
+accountsInfo.Prefernce ..> java.util.TreeMap
+accountsInfo.Prefernce ..> enumerations.AfterClickEffects
+accountsInfo.Prefernce ..> enumerations.StringSource
+db.DBConnection ..> accountsInfo.AccountStatistics
+db.DBConnection ..> accountsInfo.AccountStatisticsBuilder
+db.DBConnection ..> accountsInfo.Prefernce
+db.DBConnection ..> java.io.IOException
+db.DBConnection ..> java.net.URISyntaxException
+db.DBConnection ..> java.nio.file.Files
+db.DBConnection ..> java.nio.file.Path
+db.DBConnection ..> java.nio.file.Paths
+db.DBConnection ..> java.sql.Connection
+db.DBConnection ..> java.sql.Date
+db.DBConnection ..> java.sql.DriverManager
+db.DBConnection ..> java.sql.PreparedStatement
+db.DBConnection ..> java.sql.ResultSet
+db.DBConnection ..> java.sql.SQLException
+db.DBConnection ..> java.sql.Statement
+db.DBConnection ..> java.sql.Time
+db.DBConnection ..> java.time.LocalDate
+db.DBConnection ..> java.time.LocalTime
+db.DBConnection ..> java.util.ArrayList
+db.DBConnection ..> java.util.stream.Collectors
+db.DBConnection ..> javafx.util.Pair
+db.DBConnection ..> enumerations.AfterClickEffects
+db.DBConnection ..> enumerations.StringSource
+gui.AccountsPane ..> accountsInfo.Prefernce
+gui.AccountsPane ..> db.DBConnection
+gui.AccountsPane ..> gui.MeshPane
+gui.AccountsPane ..> javafx.scene.Scene
+gui.AccountsPane ..> javafx.scene.control.Button
+gui.AccountsPane ..> javafx.scene.control.ListView
+gui.AccountsPane --|> javafx.scene.layout.Pane
+gui.AccountsPane ..> javafx.scene.layout.VBox
+gui.AccountsPane ..> javafx.stage.Stage
+gui.AccountsPane ..> schulte.Schulte
+gui.MeshPane ..> accountsInfo.Prefernce
+gui.MeshPane ..> db.DBConnection
+gui.MeshPane ..> java.awt.Point
+gui.MeshPane ..> java.io.IOException
+gui.MeshPane ..> java.net.URISyntaxException
+gui.MeshPane ..> java.nio.file.Files
+gui.MeshPane ..> java.nio.file.Paths
+gui.MeshPane ..> java.time.LocalTime
+gui.MeshPane ..> java.time.temporal.ChronoUnit
+gui.MeshPane ..> java.util.ArrayList
+gui.MeshPane ..> java.util.Random
+gui.MeshPane ..> java.util.TreeSet
+gui.MeshPane ..> java.util.stream.Stream
+gui.MeshPane ..> javafx.scene.control.Button
+gui.MeshPane ..> javafx.scene.image.Image
+gui.MeshPane ..> javafx.scene.image.ImageView
+gui.MeshPane --|> javafx.scene.layout.Pane
+gui.MeshPane ..> javafx.scene.paint.Color
+gui.MeshPane ..> javafx.scene.text.Font
+gui.MeshPane ..> javafx.scene.text.Text
+gui.MeshPane ..> javafx.scene.text.TextAlignment
+gui.MeshPane ..> javafx.scene.text.TextFlow
+gui.MeshPane ..> schulte.Schulte
+gui.MeshPane ..> enumerations.AfterClickEffects
+gui.MeshPane ..> enumerations.StringSource
+schulte.Schulte ..> java.lang.Override
+schulte.Schulte ..> accountsInfo.AccountStatistics
+schulte.Schulte ..> accountsInfo.Prefernce
+schulte.Schulte ..> db.DBConnection
+schulte.Schulte ..> gui.MeshPane
+schulte.Schulte ..> java.io.IOException
+schulte.Schulte ..> java.time.LocalTime
+schulte.Schulte ..> java.time.temporal.ChronoUnit
+schulte.Schulte ..> java.util.ArrayList
+schulte.Schulte ..> java.util.Optional
+schulte.Schulte ..> javafx.animation.KeyFrame
+schulte.Schulte ..> javafx.animation.Timeline
+schulte.Schulte --|> javafx.application.Application
+schulte.Schulte ..> javafx.event.ActionEvent
+schulte.Schulte ..> javafx.scene.Scene
+schulte.Schulte ..> javafx.scene.chart.CategoryAxis
+schulte.Schulte ..> javafx.scene.chart.LineChart
+schulte.Schulte ..> javafx.scene.chart.NumberAxis
+schulte.Schulte ..> javafx.scene.chart.XYChart
+schulte.Schulte ..> javafx.scene.control.Alert
+schulte.Schulte ..> javafx.scene.control.Button
+schulte.Schulte ..> javafx.scene.control.ButtonBar.ButtonData
+schulte.Schulte ..> javafx.scene.control.ButtonType
+schulte.Schulte ..> javafx.scene.control.CheckBox
+schulte.Schulte ..> javafx.scene.control.ComboBox
+schulte.Schulte ..> javafx.scene.control.Dialog
+schulte.Schulte ..> javafx.scene.control.Label
+schulte.Schulte ..> javafx.scene.control.ListView
+schulte.Schulte ..> javafx.scene.control.Menu
+schulte.Schulte ..> javafx.scene.control.MenuBar
+schulte.Schulte ..> javafx.scene.control.MenuItem
+schulte.Schulte ..> javafx.scene.control.Separator
+schulte.Schulte ..> javafx.scene.control.SeparatorMenuItem
+schulte.Schulte ..> javafx.scene.control.Slider
+schulte.Schulte ..> javafx.scene.control.TextInputDialog
+schulte.Schulte ..> javafx.scene.control.ToolBar
+schulte.Schulte ..> javafx.scene.control.Tooltip
+schulte.Schulte ..> javafx.scene.image.Image
+schulte.Schulte ..> javafx.scene.image.ImageView
+schulte.Schulte ..> javafx.scene.input.KeyCodeCombination
+schulte.Schulte ..> javafx.scene.layout.GridPane
+schulte.Schulte ..> javafx.scene.layout.VBox
+schulte.Schulte ..> javafx.scene.web.WebEngine
+schulte.Schulte ..> javafx.scene.web.WebView
+schulte.Schulte ..> javafx.stage.Stage
+schulte.Schulte ..> javafx.util.Callback
+schulte.Schulte ..> javafx.util.Duration
+schulte.Schulte ..> javafx.util.Pair
+@enduml
