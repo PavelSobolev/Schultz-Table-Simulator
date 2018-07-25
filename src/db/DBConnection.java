@@ -140,7 +140,7 @@ public class DBConnection {
     // isStart - 
     // UId - 
     /**
-     * read the account's preference form DB (if there is no preference, returns default preference) 
+     * read preferences of the account form DB (if there is no preference, returns default preference) 
      * @param isStart read setting just when program starts (UId is not considered)
      * @param UId account id
      * @return reference to newly constructed Preference class instance
@@ -209,7 +209,6 @@ public class DBConnection {
         catch (SQLException ex)
         {
             CanUseDB = false;
-            return;           
         }               
     }
 
@@ -331,7 +330,6 @@ public class DBConnection {
         catch (SQLException ex) 
         {
             CanUseDB = false;
-            return;
         }        
     }
     
@@ -375,10 +373,7 @@ public class DBConnection {
         catch (SQLException ex) 
         {
             CanUseDB = false;
-            return;
-        }
-        
-        
+        }                
     }
 
     /**
@@ -459,8 +454,7 @@ public class DBConnection {
         catch(SQLException ex)
         {
             result = false;
-        }
-        
+        }        
         return resList;
     }
 }
