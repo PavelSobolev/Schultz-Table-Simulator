@@ -8,5 +8,6 @@ The project aim is to create computer software which helps a person to achieve h
 1. Java 9
 2. JavaFX
 3. NetBeans
+4. SQLite database
 
 ### [Video capture of the app window (YouTube)](https://youtu.be/uYj_-70CfAg) 
