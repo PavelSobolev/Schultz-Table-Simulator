@@ -4,3 +4,4 @@ This software is devoted to computerized implementation of the method called "Sh
 
 The project aim is to create computer software which helps a person to achieve his personal goal in self-development and mental activity. Namely, the software can serve as a means of developing personal ability to quickly find information, control focus of attention and widen the field of the sight. 
 
+### [Video screen capture (YouTube](https://youtu.be/uYj_-70CfAg) 
